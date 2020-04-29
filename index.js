@@ -6,6 +6,7 @@ const OAUTH_CALLBACK_URL = process.env.OAUTH_CALLBACK_URL;
 const HOSTED_APP_URL = process.env.HOSTED_APP_URL;
 const BG_FAKE = process.env.BG_FAKE;
 const STATIC_ASSET_URL = process.env.STATIC_ASSET_URL;
+const START_URL = process.env.START_URL;
 
 var express = require('express');
 var path = require('path');
@@ -112,11 +113,6 @@ app.get('/server_callback', function(req, res){
         res.redirect('/');
     }
 
-    var startURL = req.query.state;
-    if (req.query.state != null) {
-        startURL = decodeURI(startURL);
-    }
-
     //Set up request body
     const body = {
         "code": code,
@@ -181,7 +177,7 @@ app.get('/server_callback', function(req, res){
                 community_url: COMMUNITY_URL,
                 app_id: APP_ID,
                 callback_url: OAUTH_CALLBACK_URL,
-                start_url: startURL,
+                start_url: START_URL,
                 hosted_app_url: HOSTED_APP_URL,
                 static_asset_url: STATIC_ASSET_URL,
                 identity_response: Buffer.from(JSONresponse).toString("base64")

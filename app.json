@@ -30,6 +30,10 @@
         "description": "The URL to your community, without any trailing characters.",
         "value": "Your value here"
       },
+      "START_URL" : {
+        "description": "The URL you want the user to redirect to post login",
+        "value": "Your value here"
+      },
       "STATIC_ASSET_URL" : {
         "description": "The URL to your hosted version of sfdc_authmagic.js from the repo.",
         "value": "Your value here"
