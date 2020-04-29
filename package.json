@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frankcaron/salesforce-embedded-login-example.git"
+    "url": "git+https://github.com/abychat/salesforce-embedded-login-example.git"
   },
   "keywords": [
     "salesforce",
@@ -17,9 +17,9 @@
   "author": "Frank Caron",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/frankcaron/salesforce-embedded-login-example/issues"
+    "url": "https://github.com/abychat/salesforce-embedded-login-example/issues"
   },
-  "homepage": "https://github.com/frankcaron/salesforce-embedded-login-example#readme",
+  "homepage": "https://github.com/abychat/salesforce-embedded-login-example#readme",
   "dependencies": {
     "cookie-parser": "^1.4.4",
     "ejs": "^2.7.1",
